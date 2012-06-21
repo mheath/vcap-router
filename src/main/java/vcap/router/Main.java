@@ -11,7 +11,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author Mike Heath <heathma@elcapo@gmail.com>
+ * @author Mike Heath <elcapo@gmail.com>
  */
 public class Main implements Runnable {
 
