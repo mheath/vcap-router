@@ -21,7 +21,8 @@
 
 	<properties>
 		<logback.version>1.0.6</logback.version>
-		<netty.version>3.5.2.Final</netty.version>
+		<netty.version>3.5.3.Final</netty.version>
+		<netty4.version>4.0.0.Alpha5</netty4.version>
 		<slf4j.version>1.6.5</slf4j.version>
 		<spring.version>3.1.1.RELEASE</spring.version>
 		<testng.version>6.3.1</testng.version>
@@ -67,6 +68,11 @@
 			<version>${netty.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty</artifactId>
+			<version>${netty4.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>1.9.7</version>
@@ -74,12 +80,17 @@
 		<dependency>
 			<groupId>com.github.jnats</groupId>
 			<artifactId>nats-client</artifactId>
-			<version>0.3-SNAPSHOT</version>
+			<version>0.4-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.github.jnats</groupId>
 			<artifactId>nats-client-spring</artifactId>
-			<version>0.3-SNAPSHOT</version>
+			<version>0.4-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.vcap</groupId>
+			<artifactId>nats-vcap</artifactId>
+			<version>0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>

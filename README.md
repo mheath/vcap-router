@@ -1,4 +1,4 @@
-cf-router
+vcap-router
 =========
 
 An experimental alternative router for Cloud Foundry
