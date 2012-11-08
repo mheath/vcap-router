@@ -1,0 +1,9 @@
+To Do:
+
+Publish /varz
+Publish /healthz
+Build router table
+route requests
+Simple distro easy to start, Yaml config, pid file, etc.
+Pluggable
+
