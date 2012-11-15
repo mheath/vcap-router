@@ -7,3 +7,4 @@ route requests
 Simple distro easy to start, Yaml config, pid file, etc.
 Pluggable
 
+Are the vcap component UUIDs persistent?
