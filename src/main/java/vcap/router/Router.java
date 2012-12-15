@@ -1,7 +1,7 @@
 package vcap.router;
 
 import nats.client.Nats;
-import nats.vcap.message.RouterStartMessage;
+import nats.vcap.message.RouterStart;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,7 +37,7 @@ public class Router implements Runnable {
 	public Router(Nats nats, @Named("routerId") String routerId, @Named("version") String version) throws IOException {
 		this.nats = nats;
 		final ObjectMapper mapper = new ObjectMapper();
-		routerStartMessage = mapper.writeValueAsString(new RouterStartMessage(routerId, version));
+		routerStartMessage = mapper.writeValueAsString(new RouterStart(routerId, version));
 
 	}
 
